@@ -108,10 +108,10 @@ func stringify_int(num: int) -> String:
     var res := ""
     
     for chr in numstr.reverse():
-        res = chr + res
         count += 1
+        res = chr + res
         if count % 3 == 0 and count != size:
-            res += ","
+            res = "," + res
 
     return res
     
