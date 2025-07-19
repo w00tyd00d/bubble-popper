@@ -16,15 +16,15 @@ enum Id {
 @export var level := -1 :
     set(num):
         level = maxi(-1, num)
-        if cost:
+        if cost_label:
             var _cost := get_cost()
-            cost.set_string("MAX" if _cost == -1 else str(_cost))
+            cost_label.set_string("MAX" if _cost == -1 else str(_cost))
 
 var label : String :
     set(string):
         label = string
-        if label_name:
-            label_name.set_string(string)
+        if name_label:
+            name_label.set_string(string)
 
 var texture : Texture2D :
     set(img):
@@ -39,22 +39,26 @@ var _data := ShopButtonData.new()
 
 @onready var display := $Display as Control
 
-@onready var label_name := %Name as ShadowLabel
-@onready var cost := %Cost as ShadowLabel
+@onready var name_label := %Name as ShadowLabel
+@onready var cost_label := %Cost as ShadowLabel
 @onready var icon := %Icon as TextureRect
 
 
 func _ready() -> void:
     button_down.connect(func() -> void:
         display.position = Vector2(4,4)
-        check_for_payment()
+        _check_for_payment()
     )
 
     button_up.connect(func() -> void:
         display.position = Vector2()
     )
 
-    label_name.set_string(label)
+    GameState.check_afforability.connect(func():
+        _check_if_affordable()
+    , ConnectFlags.CONNECT_DEFERRED)
+
+    name_label.set_string(label)
     icon.texture = texture
 
 
@@ -68,10 +72,23 @@ func update_level(lvl_up := 0) -> void:
     show()
     level += lvl_up
     var _cost := get_cost()
-    cost.set_string("MAX" if _cost == -1 else str(_cost))
+    cost_label.set_string("MAX" if _cost == -1 else str(_cost))
 
 
-func check_for_payment() -> void:
+func _check_if_affordable() -> void:
+    var _cost := get_cost()
+    
+    if _cost == -1:
+        cost_label.modulate = Palette.GRAY
+    
+    elif _cost <= GameState.bubble_count:
+        cost_label.modulate = Palette.WHITE
+    
+    else:
+        cost_label.modulate = Palette.RED
+
+
+func _check_for_payment() -> void:
     var _cost := get_cost()
     if _cost == -1: return
 
@@ -90,8 +107,8 @@ func _assign_data() -> void:
     label = meta.label
     texture = meta.icon
 
-    # label_name.set_string(meta["label"])
+    # name_label.set_string(meta["label"])
     # icon.texture = meta.icon
 
-    if cost:
+    if cost_label:
         update_level()

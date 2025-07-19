@@ -9,6 +9,7 @@
 custom_minimum_size = Vector2(115, 54)
 offset_right = 115.0
 offset_bottom = 54.0
+focus_mode = 0
 texture_normal = ExtResource("1_du6ki")
 texture_pressed = ExtResource("2_eo3gn")
 script = ExtResource("3_eo3gn")

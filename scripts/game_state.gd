@@ -3,6 +3,8 @@ extends Node
 signal update_bubble_count(num: int)
 signal update_shop_button(name: ShopButton.Id)
 
+signal check_afforability
+
 signal double_bubble_pressed
 signal cursor_radius_pressed
 
@@ -24,6 +26,8 @@ var bubble_count := 0 :
         bubble_count = num
 
         update_bubble_count.emit(bubble_count)
+        check_afforability.emit()
+        
         _check_for_bubble_count_unlocks()
 
 var cursor_radius_level := 0

@@ -45,6 +45,7 @@ patch_margin_right = 9
 patch_margin_bottom = 9
 
 [node name="BubblesLabel" type="Label" parent="."]
+modulate = Color(0.952941, 0.952941, 0.952941, 1)
 custom_minimum_size = Vector2(0, 16)
 offset_left = 8.0
 offset_top = 8.0
@@ -65,6 +66,7 @@ offset_bottom = 18.0
 text = "Bubbles :"
 
 [node name="BubblesCount" type="Label" parent="."]
+modulate = Color(0.952941, 0.952941, 0.952941, 1)
 custom_minimum_size = Vector2(0, 16)
 offset_left = 160.0
 offset_top = 8.0
