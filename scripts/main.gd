@@ -4,4 +4,4 @@ extends Node2D
 
 func _ready() -> void:
     GameState.world = world
-    GameState.game_data = GameData.new()
+    world.bubble_container.update()

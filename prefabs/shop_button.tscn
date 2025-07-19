@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://e5kcy86pn23b"]
+[gd_scene load_steps=5 format=3 uid="uid://e5kcy86pn23b"]
 
 [ext_resource type="Texture2D" uid="uid://c2kk2rljlfebk" path="res://assets/shop_button_unpressed.png" id="1_du6ki"]
 [ext_resource type="Texture2D" uid="uid://dmnv8dth1urig" path="res://assets/shop_button_pressed.png" id="2_eo3gn"]
 [ext_resource type="Script" uid="uid://b712vnropfwle" path="res://scripts/shop_button.gd" id="3_eo3gn"]
+[ext_resource type="Script" uid="uid://dym7m7swkx7wn" path="res://scripts/shadow_label.gd" id="5_ukrwg"]
 
 [node name="ShopButton" type="TextureButton"]
 custom_minimum_size = Vector2(115, 54)
@@ -11,6 +12,7 @@ offset_bottom = 54.0
 texture_normal = ExtResource("1_du6ki")
 texture_pressed = ExtResource("2_eo3gn")
 script = ExtResource("3_eo3gn")
+level = 0
 
 [node name="Display" type="Control" parent="."]
 anchors_preset = 0
@@ -18,29 +20,66 @@ offset_right = 112.0
 offset_bottom = 48.0
 mouse_filter = 1
 
-[node name="Label" type="Label" parent="Display"]
-layout_mode = 0
-offset_left = 64.0
-offset_top = 32.0
-offset_right = 88.0
-offset_bottom = 39.0
-theme_override_font_sizes/font_size = 8
-text = "Buy"
-
-[node name="Shadow" type="Label" parent="Display/Label"]
-modulate = Color(0.105882, 0.0823529, 0.45098, 1)
-show_behind_parent = true
-offset_left = 1.0
-offset_top = 1.0
-offset_right = 25.0
-offset_bottom = 8.0
-theme_override_font_sizes/font_size = 8
-text = "Buy"
-
-[node name="Icon" type="ColorRect" parent="Display"]
+[node name="Icon" type="TextureRect" parent="Display"]
+unique_name_in_owner = true
 layout_mode = 0
 offset_left = 8.0
 offset_top = 8.0
 offset_right = 40.0
 offset_bottom = 40.0
-color = Color(0, 0, 1, 1)
+
+[node name="Name" type="Label" parent="Display"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.429
+anchor_top = 0.167
+anchor_right = 0.929
+anchor_bottom = 0.5
+offset_left = -0.0480042
+offset_top = -0.0160007
+offset_right = -0.0480042
+offset_bottom = 1.0
+theme_override_font_sizes/font_size = 8
+horizontal_alignment = 1
+script = ExtResource("5_ukrwg")
+
+[node name="Shadow" type="Label" parent="Display/Name"]
+modulate = Color(0.105882, 0.0823529, 0.45098, 1)
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.018
+anchor_top = 0.059
+anchor_right = 1.018
+anchor_bottom = 1.059
+offset_left = -0.00800002
+offset_top = -0.00300002
+offset_right = -0.00799942
+offset_bottom = -10.003
+theme_override_font_sizes/font_size = 8
+horizontal_alignment = 1
+
+[node name="Cost" type="Label" parent="Display"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 48.0
+offset_top = 32.0
+offset_right = 104.0
+offset_bottom = 39.0
+theme_override_font_sizes/font_size = 8
+text = "999,999"
+horizontal_alignment = 1
+script = ExtResource("5_ukrwg")
+
+[node name="Shadow" type="Label" parent="Display/Cost"]
+modulate = Color(0.105882, 0.0823529, 0.45098, 1)
+show_behind_parent = true
+layout_mode = 0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 57.0
+offset_bottom = 8.0
+theme_override_font_sizes/font_size = 8
+text = "999,999"
+horizontal_alignment = 1
