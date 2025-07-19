@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=3 uid="uid://e5kcy86pn23b"]
+
+[ext_resource type="Texture2D" uid="uid://c2kk2rljlfebk" path="res://assets/shop_button_unpressed.png" id="1_du6ki"]
+[ext_resource type="Texture2D" uid="uid://dmnv8dth1urig" path="res://assets/shop_button_pressed.png" id="2_eo3gn"]
+[ext_resource type="Script" uid="uid://b712vnropfwle" path="res://scripts/shop_button.gd" id="3_eo3gn"]
+
+[node name="ShopButton" type="TextureButton"]
+custom_minimum_size = Vector2(115, 54)
+offset_right = 115.0
+offset_bottom = 54.0
+texture_normal = ExtResource("1_du6ki")
+texture_pressed = ExtResource("2_eo3gn")
+script = ExtResource("3_eo3gn")
+
+[node name="Display" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 112.0
+offset_bottom = 48.0
+mouse_filter = 1
+
+[node name="Label" type="Label" parent="Display"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 32.0
+offset_right = 88.0
+offset_bottom = 39.0
+theme_override_font_sizes/font_size = 8
+text = "Buy"
+
+[node name="Shadow" type="Label" parent="Display/Label"]
+modulate = Color(0.105882, 0.0823529, 0.45098, 1)
+show_behind_parent = true
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 25.0
+offset_bottom = 8.0
+theme_override_font_sizes/font_size = 8
+text = "Buy"
+
+[node name="Icon" type="ColorRect" parent="Display"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0, 0, 1, 1)

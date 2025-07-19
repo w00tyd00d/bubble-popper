@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://by800xtfl1rp"]
+
+[ext_resource type="Script" uid="uid://bebgl5osd2frg" path="res://scripts/world.gd" id="1_6be4p"]
+[ext_resource type="PackedScene" uid="uid://ds8ymnxaxtddj" path="res://prefabs/bubble_container.tscn" id="1_wwc5h"]
+[ext_resource type="PackedScene" uid="uid://dps5iwp2n6c2" path="res://prefabs/hud.tscn" id="3_6be4p"]
+[ext_resource type="Texture2D" uid="uid://gmmm0klg65qc" path="res://assets/background_tile.png" id="4_4d63b"]
+
+[node name="World" type="Node2D"]
+script = ExtResource("1_6be4p")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_repeat = 2
+offset_right = 640.0
+offset_bottom = 360.0
+texture = ExtResource("4_4d63b")
+stretch_mode = 1
+
+[node name="BubbleContainer" parent="." instance=ExtResource("1_wwc5h")]
+
+[node name="HUD" parent="." instance=ExtResource("3_6be4p")]

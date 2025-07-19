@@ -1,0 +1,130 @@
+[gd_scene load_steps=9 format=3 uid="uid://dps5iwp2n6c2"]
+
+[ext_resource type="Script" uid="uid://d2qpkjt101ke2" path="res://scripts/hud.gd" id="1_73jnp"]
+[ext_resource type="Texture2D" uid="uid://bj07i5l3tthx0" path="res://assets/hud_border.png" id="2_3ehsa"]
+[ext_resource type="PackedScene" uid="uid://e5kcy86pn23b" path="res://prefabs/shop_button.tscn" id="3_448xx"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_448xx"]
+bg_color = Color(0.105882, 0.0823529, 0.45098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d7ypv"]
+bg_color = Color(0.105882, 0.0823529, 0.45098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_env85"]
+bg_color = Color(0.105882, 0.0823529, 0.45098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mbxvq"]
+content_margin_left = 2.0
+bg_color = Color(0.305882, 0.733333, 0.898039, 1)
+
+[sub_resource type="Theme" id="Theme_ia4ll"]
+VScrollBar/styles/grabber = SubResource("StyleBoxFlat_448xx")
+VScrollBar/styles/grabber_highlight = SubResource("StyleBoxFlat_d7ypv")
+VScrollBar/styles/grabber_pressed = SubResource("StyleBoxFlat_env85")
+VScrollBar/styles/scroll = SubResource("StyleBoxFlat_mbxvq")
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_73jnp")
+
+[node name="BorderTop" type="NinePatchRect" parent="."]
+custom_minimum_size = Vector2(0, 32)
+offset_right = 512.0
+offset_bottom = 32.0
+texture = ExtResource("2_3ehsa")
+patch_margin_left = 9
+patch_margin_top = 9
+patch_margin_right = 9
+patch_margin_bottom = 9
+
+[node name="BubblesLabel" type="Label" parent="."]
+custom_minimum_size = Vector2(0, 16)
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 152.0
+offset_bottom = 24.0
+text = "Bubbles :"
+
+[node name="Shadow" type="Label" parent="BubblesLabel"]
+modulate = Color(0.105882, 0.0823529, 0.45098, 1)
+show_behind_parent = true
+custom_minimum_size = Vector2(0, 16)
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 146.0
+offset_bottom = 18.0
+text = "Bubbles :"
+
+[node name="BubblesCount" type="Label" parent="."]
+custom_minimum_size = Vector2(0, 16)
+offset_left = 160.0
+offset_top = 8.0
+offset_right = 504.0
+offset_bottom = 24.0
+text = "0"
+
+[node name="Shadow" type="Label" parent="BubblesCount"]
+modulate = Color(0.105882, 0.0823529, 0.45098, 1)
+show_behind_parent = true
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 42.0
+offset_bottom = 16.0
+text = "0"
+
+[node name="BorderSide" type="NinePatchRect" parent="."]
+custom_minimum_size = Vector2(0, 32)
+offset_left = 512.0
+offset_right = 640.0
+offset_bottom = 360.0
+texture = ExtResource("2_3ehsa")
+patch_margin_left = 9
+patch_margin_top = 9
+patch_margin_right = 9
+patch_margin_bottom = 9
+
+[node name="MarginContainer" type="MarginContainer" parent="BorderSide"]
+layout_mode = 0
+offset_right = 128.0
+offset_bottom = 360.0
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 5
+
+[node name="ScrollContainer" type="ScrollContainer" parent="BorderSide/MarginContainer"]
+layout_mode = 2
+theme = SubResource("Theme_ia4ll")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BorderSide/MarginContainer/ScrollContainer"]
+layout_mode = 2
+theme_override_constants/separation = 2
+
+[node name="ShopButton" parent="BorderSide/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("3_448xx")]
+layout_mode = 2
+
+[node name="ShopButton2" parent="BorderSide/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("3_448xx")]
+layout_mode = 2
+
+[node name="ShopButton3" parent="BorderSide/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("3_448xx")]
+layout_mode = 2
+
+[node name="ShopButton4" parent="BorderSide/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("3_448xx")]
+layout_mode = 2
+
+[node name="ShopButton5" parent="BorderSide/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("3_448xx")]
+layout_mode = 2
+
+[node name="ShopButton6" parent="BorderSide/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("3_448xx")]
+layout_mode = 2
+
+[node name="ShopButton7" parent="BorderSide/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("3_448xx")]
+layout_mode = 2
+
+[node name="BubbleArea" type="ReferenceRect" parent="."]
+offset_left = 32.0
+offset_top = 64.0
+offset_right = 480.0
+offset_bottom = 328.0
+mouse_filter = 1
