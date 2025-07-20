@@ -4,7 +4,7 @@ extends Node2D
 
 func _input(event: InputEvent) -> void:
     if event.is_action_pressed(&"k_space"):
-        GameState.bubble_count += 50
+        GameState.bubble_count += 1000
 
 
 func _ready() -> void:

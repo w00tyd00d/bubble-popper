@@ -95,7 +95,7 @@ material = ExtResource("2_g6uta")
 texture = ExtResource("1_shsib")
 
 [node name="Area2D" type="Area2D" parent="." node_paths=PackedStringArray("bubble")]
-visible = false
+monitoring = false
 script = ExtResource("3_eodmw")
 bubble = NodePath("..")
 

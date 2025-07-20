@@ -26,13 +26,8 @@ var time : int :
 var bubble_value : int :
     get: return 2 ** GameState.bubble_value_level
 
-var explosion_resistant := false :
-    set(val):
-        explosion_resistant = val
-        if val:
-            await get_tree().create_timer(2).timeout
-            explosion_resistant = false
-
+var explosion_resistant : bool :
+    get: return time < _explosion_resist_timer
 
 var is_rainbow : bool :
     get: return container.current_rainbow == self
@@ -44,6 +39,9 @@ var _moving := false
 var _move_direction := true
 var _move_tween : Tween
 
+var _explosion_resist_timer := 0 :
+    set(num): _explosion_resist_timer = time + num
+
 @onready var sprite := $Sprite2D as Sprite2D
 @onready var area := $Area2D as Area2D
 @onready var value_label := $Value as ShadowLabel
@@ -51,7 +49,8 @@ var _move_tween : Tween
 
 func _ready() -> void:
     area.mouse_entered.connect(func() -> void:
-        collect(Bubble.rainbow_value() if is_rainbow else 1)
+        if area.visible:
+            collect(Bubble.rainbow_value() if is_rainbow else 1)
     )
 
     _anchor_position = position
@@ -70,7 +69,7 @@ static func rainbow_value() -> int:
 
 func collect(mod := 1) -> void:
     if _move_tween and _move_tween.is_running():
-        _move_tween.kill()
+        _move_tween.stop()
 
     _moving = true
 
@@ -108,6 +107,9 @@ func appear() -> void:
         _moving = false
     )
 
+    if not explosion_resistant:
+        resist_explosion(500)
+
 
 func drift() -> void:
     _moving = true
@@ -130,6 +132,10 @@ func drift() -> void:
 func set_rainbow(val: bool) -> void:
     var strength := 0.67 if val else 0.0
     sprite.material.set_shader_parameter("strength", strength)
+
+
+func resist_explosion(_time: int) -> void:
+    _explosion_resist_timer = _time
 
 
 func _check_rainbow_chance() -> bool:

@@ -11,7 +11,7 @@ func _process(_delta: float) -> void:
 
 func _ready() -> void:
     area_entered.connect(func(area: Area2D):
-        if area is BubbleArea:
+        if area.visible and area is BubbleArea:
             var val := Bubble.rainbow_value() if area.bubble.is_rainbow else 1
             area.bubble.collect(val)
     )

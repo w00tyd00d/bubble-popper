@@ -27,9 +27,9 @@ func _input(event: InputEvent) -> void:
 
 func _ready() -> void:
     damage_area.area_entered.connect(func(area: Area2D):
-        if area is BubbleArea and not area.bubble.explosion_resistant:
-            area.bubble.explosion_resistant = true
-            area.bubble.collect(2 ** GameState.rainbow_bubble_level)
+        if area.visible and area is BubbleArea and not area.bubble.explosion_resistant:
+            area.bubble.resist_explosion(1250)
+            area.bubble.collect(Bubble.rainbow_value())
     )
 
     # damage_area.area_exited.connect(func(area: Area2D):
@@ -39,7 +39,7 @@ func _ready() -> void:
 
     safe_area.area_entered.connect(func(area: Area2D):
         if area is BubbleArea:
-            area.bubble.explosion_resistant = true
+            area.bubble.resist_explosion(1250)
     )
 
     # safe_area.area_exited.connect(func(area: Area2D):
