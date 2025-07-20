@@ -114,4 +114,12 @@ func stringify_int(num: int) -> String:
             res = "," + res
 
     return res
+
+
+func truncate_by_million(num: int) -> String:
+    var numstr := str(num)
+
+    if numstr.length() <= 6:
+        return numstr
     
+    return numstr.left(-6) + "M"

@@ -74,7 +74,7 @@ func update_level(lvl_up := 0) -> void:
     show()
     level += lvl_up
     var _cost := get_cost()
-    cost_label.set_string("MAX" if _cost == -1 else str(_cost))
+    cost_label.set_string("MAX" if _cost == -1 else Util.truncate_by_million(_cost))
 
 
 func _check_if_affordable() -> void:

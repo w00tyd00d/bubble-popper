@@ -15,31 +15,30 @@ var _metadata := {
     ShopButton.Id.DOUBLE_BUBBLE: {
         "label": "Double\nBubble",
         "icon": preload("uid://b862iwu6uxj50"),
-        # "costs": [50, 500, 5000],
-        "costs": [0, 0, 0, 0, 0, 0, 0, 0],
+        "costs": [50, 200, 1000, 5000, 25000, 150000, 500000, 3000000],
 
         "callback": (func():
         GameState.double_bubble_pressed.emit()
         )
     },
 
-    ShopButton.Id.CURSOR_RADIUS: {
-        "label": "Cursor\nRadius",
-        "icon": preload("uid://bqh3l3xiv2lxj"),
-        "costs": [100, 2000, 40000],
-
-        "callback": (func():
-        GameState.cursor_radius_pressed.emit()
-        )
-    },
-
     ShopButton.Id.BUBBLE_VALUE: {
         "label": "Bubble\nValue",
         "icon": preload("uid://dovs4o8dwvyk3"),
-        "costs": [250, 500, 2000, 10000],
+        "costs": [100, 400, 2000, 10000, 50000, 200000, 1000000, 5000000, 25000000, 100000000],
 
         "callback": (func():
         GameState.bubble_value_pressed.emit()
+        )
+    },
+
+    ShopButton.Id.CURSOR_RADIUS: {
+        "label": "Cursor\nRadius",
+        "icon": preload("uid://bqh3l3xiv2lxj"),
+        "costs": [150, 2000, 40000],
+
+        "callback": (func():
+        GameState.cursor_radius_pressed.emit()
         )
     },
 

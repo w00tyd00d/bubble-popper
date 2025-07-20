@@ -57,8 +57,8 @@ func unlock(id: ShopButton.Id) -> void:
 
 func _check_for_bubble_count_unlocks() -> void:
     _check_bubble_threshold(ShopButton.Id.DOUBLE_BUBBLE, 50)
-    _check_bubble_threshold(ShopButton.Id.CURSOR_RADIUS, 100)
-    _check_bubble_threshold(ShopButton.Id.BUBBLE_VALUE, 250)
+    _check_bubble_threshold(ShopButton.Id.BUBBLE_VALUE, 100)
+    _check_bubble_threshold(ShopButton.Id.CURSOR_RADIUS, 150)
     _check_bubble_threshold(ShopButton.Id.RAINBOW_BUBBLE, 1000)
 
 

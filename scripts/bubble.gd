@@ -1,6 +1,7 @@
 class_name Bubble extends Node2D
 
 const RESPAWN_DURATION := 0.7
+const MOVEMENT_SPEED := 1.5
 
 const RAINBOW_DIVISOR : float = 250
 const RAINBOW_CHANCE : Array[float] = [
@@ -19,12 +20,20 @@ var world : World :
 var container : BubbleContainer :
     get: return get_parent()
 
+var time : int :
+    get: return Time.get_ticks_msec()
+
 var bubble_value : int :
     get: return 2 ** GameState.bubble_value_level
 
 var explosion_resistant := false
 
+var _anchor_position : Vector2
 var _text_reset_position : Vector2
+
+var _moving := false
+var _move_direction := true
+var _move_tween : Tween
 
 @onready var sprite := $Sprite2D as Sprite2D
 @onready var area := $Area2D as Area2D
@@ -36,10 +45,21 @@ func _ready() -> void:
         collect()
     )
 
+    _anchor_position = position
     _text_reset_position = value_label.position
 
 
+func _process(_delta: float) -> void:
+    if area.shape.disabled or _moving: return
+
+    drift()
+
 func collect() -> void:
+    if _move_tween and _move_tween.is_running():
+        _move_tween.kill()
+
+    _moving = true
+
     if container.current_rainbow == self:
         container.collect_rainbow()
 
@@ -54,6 +74,7 @@ func collect() -> void:
 
 func find_new_position() -> void:
     position = world.get_random_position()
+    _anchor_position = position
 
 
 func appear() -> void:
@@ -68,7 +89,28 @@ func appear() -> void:
 
     var tween := create_tween()
     tween.tween_property(self, "scale", Vector2(1,1), 0.3)
-    tween.tween_callback(func(): area.enable())
+    tween.tween_callback(func():
+        area.enable()
+        _moving = false
+    )
+
+
+func drift() -> void:
+    _moving = true
+
+    var offset := Vector2(0, -4) if _move_direction else Vector2(0, 4)
+    var dest := _anchor_position + offset
+
+    _move_tween = create_tween()
+    _move_tween.set_trans(Tween.TransitionType.TRANS_QUAD)
+    _move_tween.set_ease(Tween.EaseType.EASE_IN_OUT)
+
+    _move_tween.tween_property(self, "position", dest, MOVEMENT_SPEED)
+    _move_tween.tween_interval(MOVEMENT_SPEED)
+    _move_tween.tween_callback(func():
+        _move_direction = not _move_direction
+        _moving = false
+    )
 
 
 func set_rainbow(val: bool) -> void:
