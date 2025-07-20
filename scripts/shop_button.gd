@@ -6,6 +6,7 @@ enum Id {
     NONE,
     DOUBLE_BUBBLE,
     CURSOR_RADIUS,
+    BUBBLE_VALUE,
     RAINBOW_BUBBLE
 }
 

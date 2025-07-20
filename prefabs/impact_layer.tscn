@@ -36,6 +36,7 @@ grow_vertical = 2
 shape = SubResource("CircleShape2D_07nuu")
 
 [node name="SafeArea" type="Area2D" parent="."]
+priority = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SafeArea"]
 shape = SubResource("CircleShape2D_ed7o6")

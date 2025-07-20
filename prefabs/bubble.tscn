@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://bqc44ntu10o43"]
+[gd_scene load_steps=7 format=3 uid="uid://bqc44ntu10o43"]
 
 [ext_resource type="Script" uid="uid://fem8yb7de3jm" path="res://scripts/bubble.gd" id="1_qbnvy"]
 [ext_resource type="Texture2D" uid="uid://c7kjmnfd5h8lo" path="res://assets/bubble.png" id="1_shsib"]
+[ext_resource type="Script" uid="uid://dym7m7swkx7wn" path="res://scripts/shadow_label.gd" id="2_752a7"]
 [ext_resource type="Material" uid="uid://c8o4fenaiovv7" path="res://shaders/rainbow_material.tres" id="2_g6uta"]
 [ext_resource type="Script" uid="uid://mg8brdnubh0t" path="res://scripts/bubble_area.gd" id="3_eodmw"]
 
@@ -10,6 +11,29 @@ radius = 9.0
 
 [node name="Bubble0001" type="Node2D"]
 script = ExtResource("1_qbnvy")
+
+[node name="Value" type="Label" parent="."]
+visible = false
+offset_left = -24.0
+offset_top = -13.0
+offset_right = 24.0
+offset_bottom = -5.0
+theme_override_font_sizes/font_size = 8
+text = "+1"
+horizontal_alignment = 1
+script = ExtResource("2_752a7")
+
+[node name="Shadow" type="Label" parent="Value"]
+modulate = Color(0.105882, 0.0823529, 0.45098, 1)
+show_behind_parent = true
+z_index = -1
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 49.0
+offset_bottom = 9.0
+theme_override_font_sizes/font_size = 8
+text = "+1"
+horizontal_alignment = 1
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 material = ExtResource("2_g6uta")

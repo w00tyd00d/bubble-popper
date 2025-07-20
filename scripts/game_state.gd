@@ -11,6 +11,7 @@ signal explode_at(pos: Vector2)
 
 signal double_bubble_pressed
 signal cursor_radius_pressed
+signal bubble_value_pressed
 signal rainbow_bubble_pressed
 
 var RNG := RandomNumberGenerator.new()
@@ -35,6 +36,7 @@ var world : World
 # Shop Upgrade Levels
 
 var cursor_radius_level := 0
+var bubble_value_level := 0
 var rainbow_chance_level := 0
 
 #############
@@ -42,6 +44,10 @@ var rainbow_chance_level := 0
 func _ready() -> void:
     rainbow_bubble_pressed.connect(func():
         rainbow_chance_level += 1
+    )
+
+    bubble_value_pressed.connect(func():
+        bubble_value_level += 1
     )
 
 
@@ -52,6 +58,7 @@ func unlock(id: ShopButton.Id) -> void:
 func _check_for_bubble_count_unlocks() -> void:
     _check_bubble_threshold(ShopButton.Id.DOUBLE_BUBBLE, 50)
     _check_bubble_threshold(ShopButton.Id.CURSOR_RADIUS, 100)
+    _check_bubble_threshold(ShopButton.Id.BUBBLE_VALUE, 250)
     _check_bubble_threshold(ShopButton.Id.RAINBOW_BUBBLE, 1000)
 
 

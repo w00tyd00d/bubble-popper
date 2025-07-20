@@ -28,6 +28,7 @@ func _input(event: InputEvent) -> void:
 func _ready() -> void:
     damage_area.area_entered.connect(func(area: Area2D):
         if area is BubbleArea and not area.bubble.explosion_resistant:
+            area.bubble.explosion_resistant = true
             area.bubble.collect()
     )
 
@@ -60,10 +61,11 @@ func explode_at(pos: Vector2) -> void:
         damage_area.position = Vector2()
     )
 
-    await get_tree().create_timer(0.2).timeout
+    await get_tree().create_timer(0.1).timeout
+    var mult := 1.5
 
     var safe_tween := create_tween()
-    safe_tween.tween_property(safe_collision.shape, "radius", 640, DURATION)
+    safe_tween.tween_property(safe_collision.shape, "radius", 640 * mult, DURATION * mult)
     safe_tween.tween_callback(func():
         safe_collision.shape.radius = 0.01
         safe_area.position = Vector2()

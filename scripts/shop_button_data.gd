@@ -15,7 +15,8 @@ var _metadata := {
     ShopButton.Id.DOUBLE_BUBBLE: {
         "label": "Double\nBubble",
         "icon": preload("uid://b862iwu6uxj50"),
-        "costs": [50, 500, 5000],
+        # "costs": [50, 500, 5000],
+        "costs": [0, 0, 0, 0, 0, 0, 0, 0],
 
         "callback": (func():
         GameState.double_bubble_pressed.emit()
@@ -29,6 +30,16 @@ var _metadata := {
 
         "callback": (func():
         GameState.cursor_radius_pressed.emit()
+        )
+    },
+
+    ShopButton.Id.BUBBLE_VALUE: {
+        "label": "Bubble\nValue",
+        "icon": preload("uid://dovs4o8dwvyk3"),
+        "costs": [250, 500, 2000, 10000],
+
+        "callback": (func():
+        GameState.bubble_value_pressed.emit()
         )
     },
 

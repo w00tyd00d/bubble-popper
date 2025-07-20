@@ -1,5 +1,7 @@
 class_name Bubble extends Node2D
 
+const RESPAWN_DURATION := 0.7
+
 const RAINBOW_DIVISOR : float = 250
 const RAINBOW_CHANCE : Array[float] = [
     0.0,
@@ -17,10 +19,16 @@ var world : World :
 var container : BubbleContainer :
     get: return get_parent()
 
+var bubble_value : int :
+    get: return 2 ** GameState.bubble_value_level
+
 var explosion_resistant := false
+
+var _text_reset_position : Vector2
 
 @onready var sprite := $Sprite2D as Sprite2D
 @onready var area := $Area2D as Area2D
+@onready var value_label := $Value as ShadowLabel
 
 
 func _ready() -> void:
@@ -28,16 +36,19 @@ func _ready() -> void:
         collect()
     )
 
+    _text_reset_position = value_label.position
+
 
 func collect() -> void:
     if container.current_rainbow == self:
         container.collect_rainbow()
 
-    GameState.bubble_count += 1
+    GameState.bubble_count += bubble_value
+    _animate_value()
 
     area.disable()
-    hide()
-    await get_tree().create_timer(0.7).timeout
+    sprite.hide()
+    await get_tree().create_timer(RESPAWN_DURATION).timeout
     appear()
 
 
@@ -52,7 +63,8 @@ func appear() -> void:
     find_new_position()
 
     scale = Vector2()
-    show()
+    sprite.show()
+    show() # For new bubbles to spawn
 
     var tween := create_tween()
     tween.tween_property(self, "scale", Vector2(1,1), 0.3)
@@ -68,3 +80,19 @@ func _check_rainbow_chance() -> bool:
     var idx := GameState.rainbow_chance_level
     var chance := RAINBOW_CHANCE[idx]
     return GameState.RNG.randf() < chance
+
+
+func _animate_value() -> void:
+    value_label.set_string("+{0}".format([bubble_value]))
+    value_label.show()
+
+    var end_pos := _text_reset_position + Vector2(0, -16)
+    var tween := create_tween()
+
+    tween.tween_property(value_label, "position", end_pos, RESPAWN_DURATION)
+    tween.parallel().tween_property(value_label, "modulate:a", 0, RESPAWN_DURATION)
+    tween.tween_callback(func():
+        value_label.hide()
+        value_label.modulate.a = 1
+        value_label.position = _text_reset_position
+    )
