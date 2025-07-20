@@ -34,6 +34,9 @@ var explosion_resistant := false :
             explosion_resistant = false
 
 
+var is_rainbow : bool :
+    get: return container.current_rainbow == self
+
 var _anchor_position : Vector2
 var _text_reset_position : Vector2
 
@@ -48,7 +51,7 @@ var _move_tween : Tween
 
 func _ready() -> void:
     area.mouse_entered.connect(func() -> void:
-        collect()
+        collect(Bubble.rainbow_value() if is_rainbow else 1)
     )
 
     _anchor_position = position
@@ -59,6 +62,11 @@ func _process(_delta: float) -> void:
     if area.shape.disabled or _moving: return
 
     drift()
+
+
+static func rainbow_value() -> int:
+    return 2 ** GameState.rainbow_bubble_level
+
 
 func collect(mod := 1) -> void:
     if _move_tween and _move_tween.is_running():

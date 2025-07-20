@@ -12,7 +12,8 @@ func _process(_delta: float) -> void:
 func _ready() -> void:
     area_entered.connect(func(area: Area2D):
         if area is BubbleArea:
-            area.bubble.collect()
+            var val := Bubble.rainbow_value() if area.bubble.is_rainbow else 1
+            area.bubble.collect(val)
     )
 
     GameState.cursor_radius_pressed.connect(func():
