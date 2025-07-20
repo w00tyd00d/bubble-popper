@@ -35,7 +35,7 @@ var _metadata := {
     ShopButton.Id.CURSOR_RADIUS: {
         "label": "Cursor\nRadius",
         "icon": preload("uid://bqh3l3xiv2lxj"),
-        "costs": [150, 2000, 40000],
+        "costs": [150, 300, 1500, 7500, 37500, 200000],
 
         "callback": (func():
         GameState.cursor_radius_pressed.emit()
@@ -45,7 +45,7 @@ var _metadata := {
     ShopButton.Id.RAINBOW_BUBBLE: {
         "label": "Rainbow\nBubble",
         "icon": preload("uid://dg0yithqkl6x2"),
-        "costs": [1000, 10000],
+        "costs": [1000, 5000, 25000],
 
         "callback": (func():
         GameState.rainbow_bubble_pressed.emit()

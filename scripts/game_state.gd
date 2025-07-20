@@ -37,13 +37,13 @@ var world : World
 
 var cursor_radius_level := 0
 var bubble_value_level := 0
-var rainbow_chance_level := 0
+var rainbow_bubble_level := 0
 
 #############
 
 func _ready() -> void:
     rainbow_bubble_pressed.connect(func():
-        rainbow_chance_level += 1
+        rainbow_bubble_level += 1
     )
 
     bubble_value_pressed.connect(func():

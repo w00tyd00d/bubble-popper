@@ -1,7 +1,7 @@
 class_name ImpactLayer extends CanvasLayer
 
 
-const DURATION := 1.5
+const DURATION := 1.25
 
 var impact_size := 0.0 :
     set(num):
@@ -29,18 +29,23 @@ func _ready() -> void:
     damage_area.area_entered.connect(func(area: Area2D):
         if area is BubbleArea and not area.bubble.explosion_resistant:
             area.bubble.explosion_resistant = true
-            area.bubble.collect()
+            area.bubble.collect(2 ** GameState.rainbow_bubble_level)
     )
+
+    # damage_area.area_exited.connect(func(area: Area2D):
+    #     if area is BubbleArea and not area.bubble.explosion_resistant:
+    #         area.bubble.explosion_resistant = false
+    # )
 
     safe_area.area_entered.connect(func(area: Area2D):
         if area is BubbleArea:
             area.bubble.explosion_resistant = true
     )
 
-    safe_area.area_exited.connect(func(area: Area2D):
-        if area is BubbleArea:
-            area.bubble.explosion_resistant = false
-    )
+    # safe_area.area_exited.connect(func(area: Area2D):
+    #     if area is BubbleArea:
+    #         area.bubble.explosion_resistant = false
+    # )
 
     GameState.explode_at.connect(explode_at)
 

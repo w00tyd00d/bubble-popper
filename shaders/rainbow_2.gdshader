@@ -1,14 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bqc44ntu10o43"]
-
-[ext_resource type="Script" uid="uid://fem8yb7de3jm" path="res://scripts/bubble.gd" id="1_qbnvy"]
-[ext_resource type="Texture2D" uid="uid://c7kjmnfd5h8lo" path="res://assets/bubble.png" id="1_shsib"]
-[ext_resource type="PackedScene" uid="uid://dnl42v8q5qigm" path="res://prefabs/shadow_label.tscn" id="2_752a7"]
-[ext_resource type="Material" uid="uid://c8o4fenaiovv7" path="res://shaders/rainbow_material.tres" id="2_g6uta"]
-[ext_resource type="Script" uid="uid://mg8brdnubh0t" path="res://scripts/bubble_area.gd" id="3_eodmw"]
-
-[sub_resource type="Shader" id="Shader_vawuw"]
-resource_local_to_scene = true
-code = "shader_type canvas_item;
+shader_type canvas_item;
 
 uniform vec4 oldColorBody1 : source_color;
 uniform vec4 oldColorBody2 : source_color;
@@ -32,7 +22,7 @@ vec2 sprite_sheet_size = vec2(textureSize(TEXTURE,0));
 vec2 frame_size;
 frame_size.x = sprite_sheet_size.x/float(sprite_sheet_columns);
 frame_size.y = sprite_sheet_size.y/float(sprite_sheet_rows);
-// seperate the sprite sheet into \"frames\" so that the rainbow is
+// seperate the sprite sheet into "frames" so that the rainbow is
 // repeated for each frame individually, and not across the whole thing
 // together
 vec2 current_point = sprite_sheet_size * UV;
@@ -65,40 +55,4 @@ COLOR += newColor1 * when_lt(distance(currentColor, oldColorBody1),precision);
 COLOR += newColor2 * when_lt(distance(currentColor, oldColorBody2),precision);
 vec4 currentColor1 = COLOR; // get the current value of the pixels
 COLOR += currentColor * when_lt(distance(vec4(0.0, 0.0, 0.0, 0.0), currentColor1),precision);
-}"
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_4bd8s"]
-resource_local_to_scene = true
-shader = SubResource("Shader_vawuw")
-shader_parameter/oldColorBody1 = Color(0.952941, 0.952941, 0.952941, 1)
-shader_parameter/oldColorBody2 = Color(0, 0, 0, 1)
-shader_parameter/precision = 0.1
-shader_parameter/strength = 0.0
-shader_parameter/speed = 0.5
-shader_parameter/angle = 135.0
-shader_parameter/sprite_sheet_columns = 1
-shader_parameter/sprite_sheet_rows = 1
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_qbnvy"]
-radius = 9.0
-
-[node name="Bubble0001" type="Node2D"]
-script = ExtResource("1_qbnvy")
-
-[node name="Value" parent="." instance=ExtResource("2_752a7")]
-visible = false
-modulate = Color(0.952941, 0.952941, 0.952941, 1)
-material = SubResource("ShaderMaterial_4bd8s")
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-material = ExtResource("2_g6uta")
-texture = ExtResource("1_shsib")
-
-[node name="Area2D" type="Area2D" parent="." node_paths=PackedStringArray("bubble")]
-visible = false
-script = ExtResource("3_eodmw")
-bubble = NodePath("..")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-shape = SubResource("CircleShape2D_qbnvy")
-disabled = true
+}

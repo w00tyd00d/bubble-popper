@@ -26,7 +26,13 @@ var time : int :
 var bubble_value : int :
     get: return 2 ** GameState.bubble_value_level
 
-var explosion_resistant := false
+var explosion_resistant := false :
+    set(val):
+        explosion_resistant = val
+        if val:
+            await get_tree().create_timer(2).timeout
+            explosion_resistant = false
+
 
 var _anchor_position : Vector2
 var _text_reset_position : Vector2
@@ -54,7 +60,7 @@ func _process(_delta: float) -> void:
 
     drift()
 
-func collect() -> void:
+func collect(mod := 1) -> void:
     if _move_tween and _move_tween.is_running():
         _move_tween.kill()
 
@@ -63,8 +69,8 @@ func collect() -> void:
     if container.current_rainbow == self:
         container.collect_rainbow()
 
-    GameState.bubble_count += bubble_value
-    _animate_value()
+    GameState.bubble_count += bubble_value * mod
+    _animate_value(mod)
 
     area.disable()
     sprite.hide()
@@ -119,13 +125,16 @@ func set_rainbow(val: bool) -> void:
 
 
 func _check_rainbow_chance() -> bool:
-    var idx := GameState.rainbow_chance_level
+    var idx := GameState.rainbow_bubble_level
     var chance := RAINBOW_CHANCE[idx]
     return GameState.RNG.randf() < chance
 
 
-func _animate_value() -> void:
-    value_label.set_string("+{0}".format([bubble_value]))
+func _animate_value(mod: int) -> void:
+    if mod > 1:
+        value_label.material.set_shader_parameter("strength", 0.67)
+
+    value_label.set_string("+{0}".format([bubble_value * mod]))
     value_label.show()
 
     var end_pos := _text_reset_position + Vector2(0, -16)
@@ -137,4 +146,6 @@ func _animate_value() -> void:
         value_label.hide()
         value_label.modulate.a = 1
         value_label.position = _text_reset_position
+        value_label.material.set_shader_parameter("strength", 0.0)
+
     )
