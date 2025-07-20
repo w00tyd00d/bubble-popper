@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://lumb8hxjogfs"]
+
+[ext_resource type="Script" uid="uid://bsjr7hnottrxn" path="res://scripts/impact_layer.gd" id="1_nq6ok"]
+[ext_resource type="Material" uid="uid://by70c5gctfqel" path="res://shaders/impact_material.tres" id="2_ed7o6"]
+[ext_resource type="Texture2D" uid="uid://gmmm0klg65qc" path="res://assets/background_tile.png" id="2_y7kwo"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_07nuu"]
+radius = 0.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ed7o6"]
+radius = 0.0
+
+[node name="ImpactLayer" type="CanvasLayer"]
+script = ExtResource("1_nq6ok")
+
+[node name="DebugTextureRect" type="TextureRect" parent="."]
+visible = false
+texture_repeat = 2
+offset_right = 640.0
+offset_bottom = 360.0
+texture = ExtResource("2_y7kwo")
+stretch_mode = 1
+
+[node name="Shockwave" type="ColorRect" parent="."]
+material = ExtResource("2_ed7o6")
+use_parent_material = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DamageArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DamageArea"]
+shape = SubResource("CircleShape2D_07nuu")
+
+[node name="SafeArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SafeArea"]
+shape = SubResource("CircleShape2D_ed7o6")

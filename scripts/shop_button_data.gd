@@ -6,17 +6,17 @@ var _metadata := {
         "label": "Lorem\nIpsum",
         "icon": preload("uid://c1r18vxx4ng8s"),
         "costs": [999999],
-        
+
         "callback": (func():
         pass
         )
     },
-    
+
     ShopButton.Id.DOUBLE_BUBBLE: {
         "label": "Double\nBubble",
         "icon": preload("uid://b862iwu6uxj50"),
         "costs": [50, 500, 5000],
-        
+
         "callback": (func():
         GameState.double_bubble_pressed.emit()
         )
@@ -26,11 +26,21 @@ var _metadata := {
         "label": "Cursor\nRadius",
         "icon": preload("uid://bqh3l3xiv2lxj"),
         "costs": [100, 2000, 40000],
-        
+
         "callback": (func():
         GameState.cursor_radius_pressed.emit()
         )
-    }
+    },
+
+    ShopButton.Id.RAINBOW_BUBBLE: {
+        "label": "Rainbow\nBubble",
+        "icon": preload("uid://dg0yithqkl6x2"),
+        "costs": [1000, 10000],
+
+        "callback": (func():
+        GameState.rainbow_bubble_pressed.emit()
+        )
+    },
 }
 
 

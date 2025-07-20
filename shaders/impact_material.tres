@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://by70c5gctfqel"]
+
+[ext_resource type="Shader" uid="uid://bv6e1fbn4fubo" path="res://shaders/impact.gdshader" id="1_s6ncq"]
+
+[resource]
+shader = ExtResource("1_s6ncq")
+shader_parameter/global_position = Vector2(320, 192)
+shader_parameter/screen_size = Vector2(640, 360)
+shader_parameter/force = 1.0
+shader_parameter/size = 0.0
+shader_parameter/thickness = 0.0

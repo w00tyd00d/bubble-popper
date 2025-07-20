@@ -1,3 +1,5 @@
+@tool
+
 extends Node
 
 signal update_bubble_count(num: int)
@@ -5,14 +7,11 @@ signal update_shop_button(name: ShopButton.Id)
 
 signal check_afforability
 
+signal explode_at(pos: Vector2)
+
 signal double_bubble_pressed
 signal cursor_radius_pressed
-
-
-enum Unlocks {
-    DOUBLE_BUBBLE,
-    CURSOR_RADIUS
-}
+signal rainbow_bubble_pressed
 
 var RNG := RandomNumberGenerator.new()
 
@@ -27,28 +26,36 @@ var bubble_count := 0 :
 
         update_bubble_count.emit(bubble_count)
         check_afforability.emit()
-        
+
         _check_for_bubble_count_unlocks()
 
-var cursor_radius_level := 0
-
-var unlocked : Dictionary[Unlocks, bool] = {}
+var unlocked : Dictionary[ShopButton.Id, bool] = {}
 var world : World
+
+# Shop Upgrade Levels
+
+var cursor_radius_level := 0
+var rainbow_chance_level := 0
 
 #############
 
-func unlock(_name: Unlocks) -> void:
-    unlocked[_name] = true
+func _ready() -> void:
+    rainbow_bubble_pressed.connect(func():
+        rainbow_chance_level += 1
+    )
+
+
+func unlock(id: ShopButton.Id) -> void:
+    unlocked[id] = true
 
 
 func _check_for_bubble_count_unlocks() -> void:
-    
-    # Double Bubble
-    if not unlocked.has(Unlocks.DOUBLE_BUBBLE) and bubble_count >= 50:
-        update_shop_button.emit(ShopButton.Id.DOUBLE_BUBBLE)
-        unlock(Unlocks.DOUBLE_BUBBLE)
-    
-    # Cursor Radius
-    if not unlocked.has(Unlocks.CURSOR_RADIUS) and bubble_count >= 100:
-        update_shop_button.emit(ShopButton.Id.CURSOR_RADIUS)
-        unlock(Unlocks.CURSOR_RADIUS)
+    _check_bubble_threshold(ShopButton.Id.DOUBLE_BUBBLE, 50)
+    _check_bubble_threshold(ShopButton.Id.CURSOR_RADIUS, 100)
+    _check_bubble_threshold(ShopButton.Id.RAINBOW_BUBBLE, 1000)
+
+
+func _check_bubble_threshold(id: ShopButton.Id, amount: int) -> void:
+    if not unlocked.has(id) and bubble_count >= amount:
+        update_shop_button.emit(id)
+        unlock(id)

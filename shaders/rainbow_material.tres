@@ -1,0 +1,15 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://c8o4fenaiovv7"]
+
+[ext_resource type="Shader" uid="uid://dw71x5njb7ttb" path="res://shaders/rainbow.gdshader" id="1_rebb7"]
+
+[resource]
+resource_local_to_scene = true
+shader = ExtResource("1_rebb7")
+shader_parameter/oldColorBody1 = Color(0.305882, 0.733333, 0.898039, 0.584314)
+shader_parameter/oldColorBody2 = Color(0, 0, 0, 1)
+shader_parameter/precision = 0.1
+shader_parameter/strength = 0.0
+shader_parameter/speed = 0.5
+shader_parameter/angle = 135.0
+shader_parameter/sprite_sheet_columns = 1
+shader_parameter/sprite_sheet_rows = 1

@@ -6,4 +6,4 @@ var total_count := 0
 
 var bubble_count := 0         
 
-var unlocked : Dictionary[GameState.Unlocks, bool] = {}
+var unlocked : Dictionary[ShopButton.Id, bool] = {}

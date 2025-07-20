@@ -6,7 +6,10 @@ enum Id {
     NONE,
     DOUBLE_BUBBLE,
     CURSOR_RADIUS,
+    RAINBOW_BUBBLE
 }
+
+static var button_data := ShopButtonData.new()
 
 @export var id: Id :
     set(_id):
@@ -34,8 +37,6 @@ var texture : Texture2D :
 
 var costs : Array
 var callback : Callable
-
-var _data := ShopButtonData.new()
 
 @onready var display := $Display as Control
 
@@ -77,13 +78,13 @@ func update_level(lvl_up := 0) -> void:
 
 func _check_if_affordable() -> void:
     var _cost := get_cost()
-    
+
     if _cost == -1:
         cost_label.modulate = Palette.GRAY
-    
+
     elif _cost <= GameState.bubble_count:
         cost_label.modulate = Palette.WHITE
-    
+
     else:
         cost_label.modulate = Palette.RED
 
@@ -99,16 +100,13 @@ func _check_for_payment() -> void:
 
 
 func _assign_data() -> void:
-    var meta := _data.get_data(id)
+    var meta := ShopButton.button_data.get_data(id)
 
     costs = meta.costs
     callback = meta.callback
 
     label = meta.label
     texture = meta.icon
-
-    # name_label.set_string(meta["label"])
-    # icon.texture = meta.icon
 
     if cost_label:
         update_level()
