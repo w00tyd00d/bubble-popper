@@ -1,6 +1,6 @@
 class_name CursorArea extends Area2D
 
-const SIZES : Array[int] = [0, 8, 16, 24, 32, 48, 64]
+const SIZES : Array[int] = [0, 8, 16, 24, 32]
 
 @onready var collision := $CollisionShape2D as CollisionShape2D
 

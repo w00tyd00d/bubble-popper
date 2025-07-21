@@ -20,8 +20,12 @@ var rainbow_cd_time := 0
 
 var active := 4
 
+@onready var audio_container := $AudioContainer as AudioContainer
+@onready var bubbles_node := $Bubbles as Node2D
+
+
 func _ready() -> void:
-    bubbles = get_children()
+    bubbles = bubbles_node.get_children()
     bubble_count = bubbles.size()
 
     GameState.double_bubble_pressed.connect(double_capacity)

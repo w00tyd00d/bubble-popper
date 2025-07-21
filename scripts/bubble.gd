@@ -3,22 +3,23 @@ class_name Bubble extends Node2D
 const RESPAWN_DURATION := 0.7
 const MOVEMENT_SPEED := 1.5
 
-const RAINBOW_DIVISOR : float = 250
-const RAINBOW_CHANCE : Array[float] = [
-    0.0,
-    1 / RAINBOW_DIVISOR,
-    2 / RAINBOW_DIVISOR,
-    4 / RAINBOW_DIVISOR,
-    8 / RAINBOW_DIVISOR,
-    16 / RAINBOW_DIVISOR,
-    32 / RAINBOW_DIVISOR
-]
+# const RAINBOW_DIVISOR : float = 250
+# const RAINBOW_CHANCE : Array[float] = [
+#     1 / RAINBOW_DIVISOR,
+#     2 / RAINBOW_DIVISOR,
+#     4 / RAINBOW_DIVISOR,
+#     8 / RAINBOW_DIVISOR,
+#     16 / RAINBOW_DIVISOR,
+#     32 / RAINBOW_DIVISOR
+# ]
+
+const RAINBOW_CHANCE := 2 / 250.0
 
 var world : World :
     get: return GameState.world
 
 var container : BubbleContainer :
-    get: return get_parent()
+    get: return get_parent().get_parent()
 
 var time : int :
     get: return Time.get_ticks_msec()
@@ -45,6 +46,7 @@ var _explosion_resist_timer := 0 :
 @onready var sprite := $Sprite2D as Sprite2D
 @onready var area := $Area2D as Area2D
 @onready var value_label := $Value as ShadowLabel
+@onready var audio_player := $AudioStreamPlayer as AudioStreamPlayer
 
 
 func _ready() -> void:
@@ -76,6 +78,8 @@ func collect(mod := 1) -> void:
     if container.current_rainbow == self:
         container.collect_rainbow()
 
+    container.audio_container.play_sound()
+
     GameState.bubble_count += bubble_value * mod
     _animate_value(mod)
 
@@ -91,7 +95,7 @@ func find_new_position() -> void:
 
 
 func appear() -> void:
-    if _check_rainbow_chance():
+    if GameState.rainbow_bubble_level > 0 and _check_rainbow_chance():
         container.attempt_set_rainbow(self)
 
     find_new_position()
@@ -139,9 +143,9 @@ func resist_explosion(_time: int) -> void:
 
 
 func _check_rainbow_chance() -> bool:
-    var idx := GameState.rainbow_bubble_level
-    var chance := RAINBOW_CHANCE[idx]
-    return GameState.RNG.randf() < chance
+    # var idx := GameState.rainbow_bubble_level
+    # var chance := RAINBOW_CHANCE[idx]
+    return GameState.RNG.randf() < RAINBOW_CHANCE
 
 
 func _animate_value(mod: int) -> void:

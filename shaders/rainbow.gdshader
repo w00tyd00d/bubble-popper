@@ -16,6 +16,9 @@ float when_lt(float x, float y) {
 }
 
 void fragment() {
+// Store the original modulate alpha from the node
+float node_alpha = COLOR.a;
+
 // get the overall size of the sprite sheet
 vec2 sprite_sheet_size = vec2(textureSize(TEXTURE,0));
 // get the frame sizes based on the columns and rows
@@ -55,4 +58,7 @@ COLOR += newColor1 * when_lt(distance(currentColor, oldColorBody1),precision);
 COLOR += newColor2 * when_lt(distance(currentColor, oldColorBody2),precision);
 vec4 currentColor1 = COLOR; // get the current value of the pixels
 COLOR += currentColor * when_lt(distance(vec4(0.0, 0.0, 0.0, 0.0), currentColor1),precision);
+
+// Apply the node's modulate alpha to the final result
+COLOR.a *= node_alpha;
 }

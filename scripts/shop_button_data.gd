@@ -4,7 +4,7 @@ class_name ShopButtonData extends RefCounted
 var _metadata := {
     ShopButton.Id.NONE: {
         "label": "Lorem\nIpsum",
-        "icon": preload("uid://c1r18vxx4ng8s"),
+        "icon": preload("uid://dvgyff4ya70lh"),
         "costs": [999999],
 
         "callback": (func():
@@ -15,7 +15,7 @@ var _metadata := {
     ShopButton.Id.DOUBLE_BUBBLE: {
         "label": "Double\nBubble",
         "icon": preload("uid://b862iwu6uxj50"),
-        "costs": [50, 200, 1000, 5000, 25000, 150000, 500000, 3000000],
+        "costs": [50, 200, 1000, 5000, 25000, 150000, 500000],
 
         "callback": (func():
         GameState.double_bubble_pressed.emit()
@@ -35,7 +35,7 @@ var _metadata := {
     ShopButton.Id.CURSOR_RADIUS: {
         "label": "Cursor\nRadius",
         "icon": preload("uid://bqh3l3xiv2lxj"),
-        "costs": [150, 300, 1500, 7500, 37500, 200000],
+        "costs": [150, 450, 2500, 12500],
 
         "callback": (func():
         GameState.cursor_radius_pressed.emit()

@@ -19,10 +19,10 @@ var explode_tween : Tween
 @onready var safe_collision := $SafeArea/CollisionShape2D as CollisionShape2D
 
 
-func _input(event: InputEvent) -> void:
-    if event.is_action_pressed(&"k_right_click"):
-        var pos := GameState.world.get_global_mouse_position()
-        explode_at(pos)
+# func _input(event: InputEvent) -> void:
+#     if event.is_action_pressed(&"k_right_click"):
+#         var pos := GameState.world.get_global_mouse_position()
+#         explode_at(pos)
 
 
 func _ready() -> void:

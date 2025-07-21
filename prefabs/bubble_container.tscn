@@ -1,4099 +1,2251 @@
-[gd_scene load_steps=3 format=3 uid="uid://ds8ymnxaxtddj"]
+[gd_scene load_steps=5 format=3 uid="uid://ds8ymnxaxtddj"]
 
 [ext_resource type="PackedScene" uid="uid://bqc44ntu10o43" path="res://prefabs/bubble.tscn" id="1_8wuqa"]
 [ext_resource type="Script" uid="uid://cjnvj41ekora7" path="res://scripts/bubble_container.gd" id="1_15vlb"]
+[ext_resource type="AudioStream" uid="uid://chuhx1yekw70y" path="res://assets/pop.ogg" id="2_6ka2y"]
+[ext_resource type="Script" uid="uid://bfi0ud2be2e5r" path="res://scripts/audio_container.gd" id="2_rvas4"]
 
 [node name="BubbleContainer" type="Node"]
 script = ExtResource("1_15vlb")
 
-[node name="Bubble0001" parent="." instance=ExtResource("1_8wuqa")]
-position = Vector2(348, 152)
-
-[node name="Bubble0002" parent="." instance=ExtResource("1_8wuqa")]
-position = Vector2(224, 210)
-
-[node name="Bubble0003" parent="." instance=ExtResource("1_8wuqa")]
-position = Vector2(188, 115)
-
-[node name="Bubble0004" parent="." instance=ExtResource("1_8wuqa")]
-position = Vector2(420, 228)
-
-[node name="Bubble0005" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0006" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0007" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0008" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0009" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0010" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0011" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0012" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0013" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0014" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0015" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0016" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0017" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0018" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0019" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0020" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0021" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0022" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0023" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0024" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0025" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0026" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0027" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0028" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0029" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0030" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0031" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0032" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0033" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0034" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0035" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0036" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0037" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0038" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0039" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0040" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0041" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0042" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0043" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0044" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0045" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0046" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0047" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0048" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0049" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0050" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0051" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0052" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0053" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0054" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0055" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0056" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0057" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0058" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0059" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0060" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0061" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0062" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0063" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0064" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0065" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0066" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0067" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0068" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0069" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0070" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0071" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0072" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0073" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0074" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0075" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0076" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0077" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0078" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0079" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0080" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0081" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0082" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0083" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0084" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0085" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0086" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0087" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0088" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0089" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0090" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0091" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0092" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0093" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0094" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0095" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0096" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0097" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0098" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0099" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0100" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0101" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0102" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0103" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0104" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0105" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0106" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0107" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0108" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0109" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0110" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0111" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0112" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0113" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0114" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0115" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0116" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0117" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0118" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0119" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0120" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0121" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0122" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0123" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0124" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0125" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0126" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0127" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0128" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0129" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0130" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0131" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0132" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0133" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0134" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0135" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0136" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0137" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0138" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0139" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0140" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0141" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0142" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0143" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0144" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0145" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0146" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0147" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0148" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0149" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0150" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0151" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0152" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0153" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0154" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0155" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0156" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0157" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0158" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0159" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0160" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0161" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0162" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0163" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0164" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0165" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0166" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0167" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0168" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0169" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0170" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0171" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0172" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0173" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0174" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0175" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0176" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0177" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0178" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0179" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0180" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0181" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0182" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0183" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0184" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0185" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0186" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0187" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0188" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0189" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0190" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0191" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0192" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0193" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0194" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0195" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0196" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0197" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0198" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0199" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0200" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0201" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0202" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0203" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0204" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0205" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0206" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0207" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0208" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0209" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0210" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0211" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0212" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0213" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0214" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0215" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0216" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0217" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0218" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0219" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0220" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0221" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0222" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0223" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0224" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0225" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0226" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0227" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0228" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0229" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0230" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0231" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0232" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0233" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0234" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0235" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0236" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0237" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0238" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0239" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0240" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0241" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0242" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0243" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0244" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0245" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0246" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0247" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0248" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0249" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0250" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0251" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0252" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0253" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0254" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0255" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0256" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0257" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0258" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0259" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0260" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0261" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0262" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0263" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0264" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0265" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0266" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0267" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0268" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0269" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0270" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0271" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0272" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0273" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0274" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0275" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0276" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0277" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0278" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0279" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0280" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0281" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0282" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0283" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0284" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0285" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0286" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0287" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0288" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0289" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0290" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0291" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0292" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0293" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0294" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0295" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0296" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0297" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0298" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0299" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0300" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0301" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0302" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0303" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0304" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0305" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0306" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0307" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0308" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0309" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0310" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0311" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0312" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0313" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0314" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0315" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0316" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0317" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0318" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0319" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0320" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0321" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0322" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0323" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0324" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0325" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0326" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0327" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0328" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0329" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0330" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0331" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0332" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0333" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0334" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0335" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0336" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0337" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0338" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0339" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0340" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0341" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0342" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0343" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0344" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0345" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0346" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0347" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0348" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0349" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0350" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0351" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0352" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0353" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0354" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0355" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0356" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0357" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0358" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0359" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0360" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0361" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0362" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0363" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0364" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0365" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0366" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0367" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0368" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0369" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0370" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0371" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0372" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0373" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0374" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0375" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0376" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0377" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0378" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0379" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0380" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0381" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0382" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0383" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0384" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0385" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0386" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0387" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0388" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0389" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0390" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0391" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0392" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0393" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0394" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0395" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0396" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0397" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0398" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0399" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0400" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0401" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0402" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0403" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0404" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0405" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0406" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
+[node name="AudioContainer" type="Node" parent="."]
+script = ExtResource("2_rvas4")
+sound = ExtResource("2_6ka2y")
 
-[node name="Bubble0407" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0408" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0409" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0410" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0411" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0412" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0413" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0414" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0415" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0416" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0417" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0418" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0419" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0420" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0421" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0422" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0423" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0424" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0425" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0426" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0427" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0428" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0429" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0430" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0431" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0432" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0433" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0434" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0435" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0436" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0437" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0438" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0439" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0440" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0441" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0442" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0443" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0444" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
-
-[node name="Bubble0445" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
-
-[node name="Bubble0446" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
-
-[node name="Bubble0447" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
-
-[node name="Bubble0448" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
+[node name="AudioStreamPlayer1" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0449" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0450" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0451" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
+[node name="AudioStreamPlayer4" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0452" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
+[node name="AudioStreamPlayer5" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0453" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
+[node name="AudioStreamPlayer6" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0454" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
+[node name="AudioStreamPlayer7" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0455" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
+[node name="AudioStreamPlayer8" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0456" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
+[node name="AudioStreamPlayer9" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0457" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
+[node name="AudioStreamPlayer10" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0458" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
+[node name="AudioStreamPlayer11" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0459" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
+[node name="AudioStreamPlayer12" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0460" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
+[node name="AudioStreamPlayer13" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0461" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
+[node name="AudioStreamPlayer14" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0462" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
+[node name="AudioStreamPlayer15" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0463" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
+[node name="AudioStreamPlayer16" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0464" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
+[node name="AudioStreamPlayer17" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0465" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
+[node name="AudioStreamPlayer18" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0466" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
+[node name="AudioStreamPlayer19" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0467" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
+[node name="AudioStreamPlayer20" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0468" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
+[node name="AudioStreamPlayer21" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0469" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
+[node name="AudioStreamPlayer22" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0470" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
+[node name="AudioStreamPlayer23" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0471" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
+[node name="AudioStreamPlayer24" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0472" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
+[node name="AudioStreamPlayer25" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0473" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
+[node name="AudioStreamPlayer26" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0474" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
+[node name="AudioStreamPlayer27" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0475" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
+[node name="AudioStreamPlayer28" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0476" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
+[node name="AudioStreamPlayer29" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0477" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
+[node name="AudioStreamPlayer30" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0478" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
+[node name="AudioStreamPlayer31" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0479" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
+[node name="AudioStreamPlayer32" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0480" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
+[node name="AudioStreamPlayer33" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0481" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
+[node name="AudioStreamPlayer34" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0482" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
+[node name="AudioStreamPlayer35" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0483" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
+[node name="AudioStreamPlayer36" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0484" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
+[node name="AudioStreamPlayer37" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0485" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
+[node name="AudioStreamPlayer38" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0486" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
+[node name="AudioStreamPlayer39" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0487" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
+[node name="AudioStreamPlayer40" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0488" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
+[node name="AudioStreamPlayer41" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0489" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
+[node name="AudioStreamPlayer42" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0490" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
+[node name="AudioStreamPlayer43" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0491" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
+[node name="AudioStreamPlayer44" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0492" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
+[node name="AudioStreamPlayer45" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0493" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
+[node name="AudioStreamPlayer46" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0494" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
+[node name="AudioStreamPlayer47" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0495" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
+[node name="AudioStreamPlayer48" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0496" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
+[node name="AudioStreamPlayer49" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0497" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
+[node name="AudioStreamPlayer50" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0498" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
+[node name="AudioStreamPlayer51" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0499" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
+[node name="AudioStreamPlayer52" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0500" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
+[node name="AudioStreamPlayer53" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0501" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
+[node name="AudioStreamPlayer54" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0502" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
+[node name="AudioStreamPlayer55" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0503" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
+[node name="AudioStreamPlayer56" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0504" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
+[node name="AudioStreamPlayer57" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0505" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
+[node name="AudioStreamPlayer58" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0506" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
+[node name="AudioStreamPlayer59" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0507" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
+[node name="AudioStreamPlayer60" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0508" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
+[node name="AudioStreamPlayer61" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0509" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(348, 152)
+[node name="AudioStreamPlayer62" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0510" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(224, 210)
+[node name="AudioStreamPlayer63" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0511" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(188, 115)
+[node name="AudioStreamPlayer64" type="AudioStreamPlayer" parent="AudioContainer"]
+stream = ExtResource("2_6ka2y")
 
-[node name="Bubble0512" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
-position = Vector2(420, 228)
+[node name="Bubbles" type="Node2D" parent="."]
 
-[node name="Bubble0513" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
+[node name="Bubble0001" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 position = Vector2(348, 152)
 
-[node name="Bubble0514" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
+[node name="Bubble0002" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 position = Vector2(224, 210)
 
-[node name="Bubble0515" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
+[node name="Bubble0003" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 position = Vector2(188, 115)
 
-[node name="Bubble0516" parent="." instance=ExtResource("1_8wuqa")]
-visible = false
+[node name="Bubble0004" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 position = Vector2(420, 228)
 
-[node name="Bubble0517" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0005" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0518" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0006" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0519" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0007" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0520" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0008" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0521" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0009" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0522" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0010" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0523" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0011" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0524" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0012" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0525" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0013" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0526" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0014" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0527" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0015" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0528" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0016" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0529" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0017" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0530" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0018" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0531" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0019" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0532" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0020" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0533" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0021" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0534" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0022" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0535" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0023" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0536" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0024" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0537" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0025" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0538" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0026" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0539" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0027" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0540" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0028" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0541" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0029" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0542" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0030" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0543" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0031" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0544" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0032" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0545" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0033" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0546" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0034" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0547" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0035" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0548" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0036" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0549" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0037" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0550" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0038" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0551" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0039" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0552" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0040" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0553" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0041" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0554" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0042" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0555" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0043" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0556" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0044" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0557" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0045" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0558" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0046" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0559" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0047" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0560" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0048" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0561" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0049" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0562" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0050" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0563" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0051" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0564" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0052" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0565" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0053" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0566" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0054" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0567" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0055" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0568" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0056" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0569" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0057" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0570" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0058" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0571" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0059" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0572" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0060" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0573" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0061" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0574" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0062" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0575" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0063" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0576" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0064" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0577" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0065" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0578" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0066" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0579" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0067" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0580" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0068" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0581" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0069" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0582" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0070" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0583" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0071" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0584" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0072" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0585" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0073" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0586" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0074" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0587" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0075" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0588" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0076" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0589" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0077" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0590" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0078" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0591" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0079" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0592" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0080" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0593" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0081" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0594" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0082" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0595" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0083" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0596" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0084" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0597" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0085" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0598" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0086" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0599" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0087" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0600" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0088" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0601" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0089" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0602" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0090" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0603" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0091" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0604" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0092" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0605" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0093" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0606" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0094" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0607" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0095" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0608" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0096" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0609" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0097" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0610" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0098" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0611" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0099" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0612" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0100" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0613" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0101" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0614" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0102" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0615" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0103" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0616" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0104" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0617" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0105" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0618" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0106" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0619" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0107" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0620" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0108" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0621" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0109" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0622" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0110" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0623" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0111" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0624" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0112" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0625" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0113" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0626" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0114" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0627" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0115" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0628" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0116" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0629" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0117" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0630" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0118" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0631" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0119" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0632" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0120" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0633" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0121" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0634" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0122" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0635" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0123" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0636" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0124" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0637" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0125" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0638" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0126" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0639" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0127" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0640" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0128" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0641" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0129" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0642" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0130" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0643" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0131" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0644" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0132" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0645" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0133" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0646" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0134" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0647" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0135" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0648" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0136" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0649" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0137" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0650" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0138" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0651" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0139" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0652" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0140" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0653" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0141" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0654" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0142" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0655" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0143" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0656" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0144" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0657" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0145" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0658" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0146" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0659" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0147" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0660" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0148" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0661" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0149" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0662" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0150" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0663" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0151" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0664" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0152" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0665" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0153" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0666" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0154" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0667" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0155" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0668" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0156" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0669" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0157" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0670" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0158" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0671" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0159" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0672" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0160" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0673" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0161" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0674" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0162" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0675" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0163" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0676" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0164" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0677" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0165" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0678" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0166" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0679" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0167" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0680" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0168" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0681" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0169" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0682" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0170" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0683" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0171" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0684" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0172" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0685" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0173" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0686" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0174" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0687" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0175" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0688" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0176" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0689" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0177" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0690" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0178" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0691" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0179" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0692" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0180" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0693" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0181" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0694" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0182" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0695" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0183" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0696" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0184" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0697" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0185" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0698" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0186" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0699" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0187" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0700" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0188" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0701" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0189" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0702" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0190" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0703" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0191" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0704" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0192" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0705" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0193" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0706" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0194" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0707" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0195" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0708" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0196" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0709" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0197" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0710" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0198" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0711" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0199" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0712" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0200" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0713" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0201" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0714" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0202" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0715" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0203" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0716" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0204" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0717" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0205" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0718" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0206" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0719" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0207" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0720" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0208" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0721" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0209" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0722" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0210" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0723" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0211" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0724" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0212" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0725" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0213" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0726" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0214" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0727" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0215" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0728" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0216" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0729" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0217" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0730" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0218" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0731" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0219" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0732" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0220" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0733" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0221" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0734" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0222" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0735" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0223" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0736" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0224" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0737" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0225" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0738" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0226" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0739" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0227" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0740" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0228" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0741" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0229" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0742" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0230" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0743" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0231" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0744" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0232" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0745" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0233" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0746" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0234" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0747" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0235" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0748" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0236" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0749" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0237" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0750" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0238" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0751" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0239" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0752" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0240" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0753" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0241" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0754" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0242" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0755" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0243" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0756" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0244" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0757" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0245" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0758" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0246" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0759" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0247" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0760" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0248" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0761" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0249" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0762" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0250" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0763" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0251" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0764" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0252" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0765" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0253" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0766" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0254" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0767" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0255" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0768" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0256" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0769" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0257" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0770" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0258" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0771" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0259" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0772" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0260" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0773" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0261" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0774" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0262" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0775" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0263" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0776" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0264" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0777" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0265" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0778" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0266" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0779" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0267" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0780" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0268" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0781" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0269" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0782" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0270" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0783" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0271" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0784" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0272" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0785" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0273" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0786" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0274" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0787" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0275" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0788" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0276" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0789" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0277" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0790" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0278" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0791" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0279" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0792" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0280" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0793" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0281" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0794" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0282" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0795" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0283" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0796" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0284" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0797" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0285" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0798" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0286" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0799" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0287" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0800" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0288" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0801" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0289" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0802" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0290" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0803" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0291" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0804" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0292" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0805" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0293" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0806" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0294" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0807" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0295" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0808" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0296" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0809" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0297" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0810" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0298" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0811" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0299" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0812" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0300" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0813" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0301" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0814" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0302" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0815" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0303" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0816" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0304" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0817" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0305" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0818" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0306" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0819" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0307" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0820" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0308" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0821" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0309" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0822" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0310" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0823" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0311" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0824" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0312" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0825" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0313" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0826" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0314" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0827" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0315" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0828" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0316" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0829" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0317" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0830" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0318" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0831" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0319" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0832" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0320" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0833" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0321" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0834" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0322" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0835" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0323" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0836" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0324" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0837" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0325" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0838" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0326" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0839" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0327" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0840" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0328" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0841" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0329" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0842" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0330" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0843" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0331" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0844" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0332" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0845" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0333" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0846" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0334" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0847" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0335" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0848" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0336" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0849" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0337" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0850" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0338" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0851" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0339" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0852" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0340" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0853" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0341" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0854" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0342" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0855" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0343" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0856" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0344" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0857" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0345" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0858" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0346" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0859" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0347" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0860" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0348" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0861" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0349" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0862" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0350" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0863" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0351" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0864" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0352" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0865" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0353" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0866" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0354" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0867" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0355" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0868" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0356" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0869" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0357" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0870" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0358" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0871" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0359" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0872" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0360" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0873" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0361" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0874" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0362" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0875" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0363" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0876" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0364" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0877" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0365" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0878" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0366" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0879" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0367" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0880" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0368" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0881" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0369" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0882" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0370" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0883" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0371" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0884" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0372" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0885" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0373" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0886" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0374" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0887" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0375" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0888" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0376" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0889" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0377" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0890" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0378" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0891" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0379" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0892" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0380" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0893" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0381" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0894" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0382" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0895" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0383" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0896" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0384" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0897" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0385" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0898" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0386" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0899" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0387" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0900" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0388" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0901" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0389" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0902" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0390" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0903" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0391" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0904" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0392" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0905" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0393" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0906" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0394" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0907" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0395" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0908" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0396" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0909" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0397" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0910" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0398" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0911" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0399" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0912" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0400" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0913" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0401" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0914" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0402" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0915" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0403" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0916" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0404" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0917" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0405" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0918" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0406" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0919" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0407" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0920" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0408" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0921" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0409" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0922" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0410" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0923" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0411" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0924" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0412" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0925" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0413" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0926" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0414" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0927" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0415" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0928" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0416" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0929" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0417" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0930" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0418" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0931" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0419" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0932" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0420" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0933" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0421" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0934" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0422" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0935" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0423" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0936" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0424" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0937" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0425" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0938" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0426" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0939" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0427" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0940" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0428" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0941" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0429" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0942" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0430" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0943" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0431" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0944" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0432" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0945" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0433" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0946" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0434" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0947" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0435" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0948" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0436" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0949" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0437" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0950" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0438" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0951" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0439" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0952" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0440" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0953" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0441" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0954" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0442" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0955" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0443" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0956" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0444" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0957" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0445" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0958" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0446" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0959" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0447" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0960" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0448" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0961" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0449" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0962" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0450" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0963" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0451" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0964" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0452" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0965" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0453" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0966" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0454" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0967" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0455" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0968" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0456" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0969" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0457" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0970" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0458" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0971" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0459" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0972" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0460" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0973" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0461" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0974" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0462" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0975" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0463" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0976" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0464" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0977" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0465" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0978" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0466" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0979" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0467" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0980" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0468" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0981" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0469" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0982" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0470" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0983" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0471" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0984" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0472" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0985" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0473" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0986" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0474" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0987" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0475" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0988" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0476" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0989" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0477" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0990" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0478" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0991" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0479" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0992" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0480" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0993" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0481" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0994" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0482" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0995" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0483" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble0996" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0484" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble0997" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0485" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble0998" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0486" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble0999" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0487" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble1000" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0488" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble1001" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0489" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble1002" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0490" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble1003" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0491" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble1004" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0492" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble1005" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0493" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble1006" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0494" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble1007" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0495" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble1008" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0496" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble1009" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0497" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble1010" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0498" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble1011" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0499" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble1012" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0500" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble1013" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0501" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble1014" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0502" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble1015" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0503" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble1016" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0504" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble1017" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0505" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble1018" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0506" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble1019" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0507" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble1020" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0508" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
 
-[node name="Bubble1021" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0509" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(348, 152)
 
-[node name="Bubble1022" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0510" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(224, 210)
 
-[node name="Bubble1023" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0511" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(188, 115)
 
-[node name="Bubble1024" parent="." instance=ExtResource("1_8wuqa")]
+[node name="Bubble0512" parent="Bubbles" instance=ExtResource("1_8wuqa")]
 visible = false
 position = Vector2(420, 228)
